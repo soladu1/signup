@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>hello from main branch</h1>
-    <h2>hello</h2>
-    <h1>hello</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="sript" src="signup.js"></link>
+    
+</head>
+<body>
+    <div class="center-container">
+        <h1>Signup Form</h1>
+        <form id="signupForm">
+           <div class="form-row">
+    <label for="firstName">First Name:</label>
+    <div class="input-wrapper">
+        <input type="text" id="firstName" placeholder="Enter First Name">
+    </div>
+    <span class="error" id="firstNameError"></span>
+</div>
+<div class="form-row">
+    <label for="lastName">Last Name:</label>
+    <div class="input-wrapper">
+        <input type="text" id="lastName" placeholder="Enter Last Name">
+    </div>
+    <span class="error" id="lastNameError"></span>
+</div>
+<div class="form-row">
+    <label for="email">Email:</label>
+    <div class="input-wrapper">
+        <input type="email" id="email" placeholder="Enter Email">
+    </div>
+    <span class="error" id="emailError"></span>
+</div>
+<div class="form-row">
+    <label for="phone">Phone Number:</label>
+    <div class="input-wrapper">
+        <input type="text" id="phone" placeholder="Enter Phone Number">
+    </div>
+    <span class="error" id="phoneError"></span>
+</div>
+<!-- Password and Confirm Password fields remain as they are -->
+            <div class="form-row">
+  <label for="password">Password:</label>
+  <div class="input-wrapper">
+    <input type="password" name="password" id="password" placeholder="Enter Password" />
+    <span class="toggle-password" onclick="togglePassword('password', this)">👁️</span>
+  </div>
+  <span class="error" id="passwordError"></span>
+</div>
+<div class="form-row">
+  <label for="confirmPassword">Confirm Password:</label>
+  <div class="input-wrapper">
+    <input type="password" id="confirmPassword" name="cpassword" placeholder="Confirm Password" />
+    <span class="toggle-password" onclick="togglePassword('confirmPassword', this)">👁️</span>
+  </div>
+  <span class="error" id="confirmPasswordError"></span>
+</div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
 </html>
